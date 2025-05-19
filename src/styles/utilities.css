@@ -1,0 +1,27 @@
+
+.gradient-bg {
+  background: radial-gradient(ellipse at center, hsl(var(--primary) / 0.15) 0%, transparent 70%), 
+              linear-gradient(160deg, hsl(var(--background)) 40%, hsl(var(--secondary)) 100%);
+}
+
+.dark .gradient-bg {
+  background: radial-gradient(ellipse at center, hsl(var(--primary) / 0.2) 0%, transparent 60%), 
+              linear-gradient(160deg, hsl(var(--background)) 30%, hsl(var(--primary) / 0.1) 100%);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary) / 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary) / 0.7);
+}
