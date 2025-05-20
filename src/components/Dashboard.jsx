@@ -53,8 +53,8 @@ const Dashboard = () => {
           },
           {
             id: 3,
-            title: "Energy Saved",
-            description: `Equivalent to ${Math.round(currentData.energyGenerated.current * 0.0007)} kg of CO2 offset this month.`,
+            title: "Current Weight",
+            description: `Equivalent to ${Math.round(currentData.energyGenerated.current * 0.0007)} kg of Current weight.`,
             value: `${Math.round(currentData.energyGenerated.current * 0.0007)} kg`,
             icon: <Award className="h-6 w-6" />,
           },
