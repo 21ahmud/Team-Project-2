@@ -62,7 +62,7 @@ window.onerror = (message, source, lineno, colno, errorObj) => {
 };
 `;
 
-const configHorizonsConsoleErrroHandler = `
+const configHorizonsConsoleErrorHandler = `
 const originalConsoleError = console.error;
 console.error = function(...args) {
 	originalConsoleError.apply(console, args);
@@ -135,7 +135,7 @@ const addTransformIndexHtml = {
 				{
 					tag: 'script',
 					attrs: { type: 'module' },
-					children: configHorizonsConsoleErrroHandler,
+					children: configHorizonsConsoleErrorHandler,
 					injectTo: 'head',
 				},
 				{
